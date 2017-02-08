@@ -1,0 +1,162 @@
+/*CLOCK*/
+
+.whole-clock{
+  text-align: center;
+  justify-content: center;
+  width: 800px;
+
+}
+.clock {
+  font-family: Overpass Mono;
+  font-style: bold;
+  font-size: 30px;
+  color: red;
+  border: 3px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  justify-content: space-between;
+  background-image: url('images/widget_clock.png');
+  background-size: cover;
+}
+
+.clock p{
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+}
+
+/*WEATHER*/
+
+.weather-container {
+  width: 800px;
+  text-align: center;
+}
+.weather{
+  font-family: Overpass Mono;
+  font-style: bold;
+  font-size: 40px;
+  border: 3px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  background-image: url('images/widget_weather.png');
+  background-size: cover;
+  background-position-y: 24%
+
+}
+
+
+
+/*TABS*/
+
+
+.tab-header{
+  border-radius: 25px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-header > span {
+  width: 120px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 1px solid black;
+  border-top: 3px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  background-color: lightblue;
+  cursor:pointer;
+}
+
+.tab-header > span:hover {
+  background-color: gray;
+}
+
+.tab-content {
+  font-weight: bold;
+  font-size: 40px;
+  height: 240px;
+  border: 3px solid black;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  background-image: url('images/widget_background.png');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.body{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 360px;
+}
+
+
+.tabs{
+  height: 300px;
+  width: 360px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/*AUTOCOMPLETE*/
+/*.auto *{
+  margin-left: 50px;
+}*/
+.autoc{
+
+  width: 360px;
+  height: 300px;
+}
+
+.autoc h1{
+  text-align: center;
+}
+
+.auto {
+  font-weight: bold;
+  width: 360px;
+  margin: auto;
+  t
+  border: 3px solid black;
+  background-image: url('images/widget_auto.png');
+  background-size: cover;
+
+}
+
+.auto li {
+  cursor:pointer;
+  list-style-type: square;
+
+}
+
+.auto-enter {
+  opacity: 0.01;
+  transform: translateY(500%);
+}
+
+.auto-enter.auto-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.auto-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.auto-leave.auto-leave-active {
+  opacity: 0.01;
+  transform: translateY(500%);
+  transition: opacity 500ms, transform 500ms;
+}
